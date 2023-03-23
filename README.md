@@ -20,7 +20,7 @@ This project is a clone of JSONPlaceholder, which is a fake REST API for testing
 
 ### Links
 
-- Live Site URL: [https://example.com](https://example.com)
+- Live Site URL: [https://jsonify.vercel.app](https://jsonify.vercel.app)
 
 ## My process
 
