@@ -43,7 +43,7 @@ export default function GuidePage() {
           </h2>
           <div className="mb-4">
             <Highlighter copyToClipBoard={false}>
-              {`fetch('${process.env.NEXT_PUBLIC_URL}/api/users/1').then(response => response.json()).then(json => console.log(json))`}
+              {`fetch('${process.env.NEXT_PUBLIC_URL}/users/1').then(response => response.json()).then(json => console.log(json))`}
             </Highlighter>
           </div>
           <h3 className="mb-4">Output 👇</h3>

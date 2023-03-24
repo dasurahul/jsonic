@@ -8,8 +8,8 @@ import { Highlighter } from "rc-highlight";
 export default function TryPage() {
   const [res, setRes] = useState("");
 
-  async function runScript() {
-    fetch("/api/users/1")
+  function runScript() {
+    fetch(process.env.NEXT_PUBLIC_URL + "/users/1")
       .then((res) => res.json())
       .then((data) => {
         setRes(JSON.stringify(data, null, 2));
@@ -27,7 +27,7 @@ export default function TryPage() {
           </p>
           <div className="mb-8">
             <Highlighter copyToClipBoard={false}>
-              {`fetch('${process.env.NEXT_PUBLIC_URL}/api/users/1').then(response => response.json()).then(json => console.log(json))`}
+              {`fetch('${process.env.NEXT_PUBLIC_URL}/users/1').then(response => response.json()).then(json => console.log(json))`}
             </Highlighter>
           </div>
           <button
@@ -62,7 +62,7 @@ export default function TryPage() {
             <li className="grid grid-cols-2 gap-4">
               <Link
                 className="text-teal-600 underline"
-                href="/api/users"
+                href={process.env.NEXT_PUBLIC_URL + "/users"}
                 target="_blank"
               >
                 /users
@@ -72,7 +72,7 @@ export default function TryPage() {
             <li className="grid grid-cols-2 gap-4">
               <Link
                 className="text-teal-600 underline"
-                href="/api/posts"
+                href={process.env.NEXT_PUBLIC_URL + "/posts"}
                 target="_blank"
               >
                 /posts
@@ -95,7 +95,7 @@ export default function TryPage() {
               <span>
                 <Link
                   className="text-teal-600 underline"
-                  href="/api/users"
+                  href={process.env.NEXT_PUBLIC_URL + "/users"}
                   target="_blank"
                 >
                   /users
@@ -107,7 +107,7 @@ export default function TryPage() {
               <span>
                 <Link
                   className="text-teal-600 underline"
-                  href="/api/posts"
+                  href={process.env.NEXT_PUBLIC_URL + "/posts"}
                   target="_blank"
                 >
                   /posts
@@ -119,7 +119,7 @@ export default function TryPage() {
               <span>
                 <Link
                   className="text-teal-600 underline"
-                  href="/api/users/1"
+                  href={process.env.NEXT_PUBLIC_URL + "/users/1"}
                   target="_blank"
                 >
                   /users/1
@@ -131,7 +131,7 @@ export default function TryPage() {
               <span>
                 <Link
                   className="text-teal-600 underline"
-                  href="/api/posts/1"
+                  href={process.env.NEXT_PUBLIC_URL + "/posts/1"}
                   target="_blank"
                 >
                   /posts/1
