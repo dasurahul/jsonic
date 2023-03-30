@@ -1,4 +1,4 @@
-# JSONify
+# JSONic
 
 This project is a clone of JSONPlaceholder, which is a fake REST API for testing and prototyping. It provides a set of endpoints that return dummy data in JSON format. The purpose of this clone is to allow developers to locally test and develop their applications without relying on the external API.
 
@@ -20,7 +20,7 @@ This project is a clone of JSONPlaceholder, which is a fake REST API for testing
 
 ### Links
 
-- Live Site URL: [https://jsonify.vercel.app](https://jsonify.vercel.app)
+- Live Site URL: [https://jsonic.vercel.app](https://jsonic.vercel.app)
 
 ## My process
 
