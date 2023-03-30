@@ -33,8 +33,8 @@ export default function GuidePage() {
           </h1>
           <p className="text-gray-600 mb-4">
             Below you&apos;ll find example using Fetch API but you can use
-            JSONify with any other language. You can copy paste the code in your
-            browser console to quickly test JSONify.
+            JSONic with any other language. You can copy paste the code in your
+            browser console to quickly test JSONic.
           </p>
         </div>
         <div className="my-8">

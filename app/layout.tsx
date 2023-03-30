@@ -3,7 +3,7 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "JSONify",
+  title: "JSONic",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
         <header className="h-20 flex justify-between items-center max-w-4xl mx-auto px-4">
           <div className="font-medium">
             <Link href="/" title="Home">
-              JSONify
+              JSONic
             </Link>
           </div>
           <ul className="flex gap-4">

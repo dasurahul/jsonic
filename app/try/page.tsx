@@ -45,7 +45,7 @@ export default function TryPage() {
             When to use
           </h2>
           <p className="text-gray-600 mb-4">
-            JSONify is a free online REST API that you can use whenever you need
+            JSONic is a free online REST API that you can use whenever you need
             some fake data. It can be in a README on GitHub, for a demo on
             CodeSandbox, in code examples on Stack Overflow, ...or simply to
             test things locally.
@@ -56,7 +56,7 @@ export default function TryPage() {
             Resources
           </h2>
           <p className="text-gray-600 mb-4">
-            JSONify comes with a set of 2 common resources:
+            JSONic comes with a set of 2 common resources:
           </p>
           <ul className="px-4 max-w-xs mb-4">
             <li className="grid grid-cols-2 gap-4">

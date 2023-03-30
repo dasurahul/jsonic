@@ -11,14 +11,10 @@ export default function Home() {
       <div className="px-4 grid grid-cols-2 items-center gap-8">
         <div>
           <h1 className="text-6xl font-semibold text-gray-800 tracking-widest mb-8">
-            {"{JSON}ify"}
+            {"{JSON}ic"}
           </h1>
           <div className="text-2xl text-gray-600">
-            <Typewriter
-              words={["Free fake API", "Made by rahul"]}
-              loop={10}
-              cursor
-            />
+            <Typewriter words={["Free fake API"]} loop={10} cursor />
           </div>
         </div>
         <div className="hidden md:block hover:animate-pulse">
