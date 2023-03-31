@@ -107,6 +107,18 @@ export default function TryPage() {
               <span>
                 <Link
                   className="text-teal-600 underline"
+                  href={process.env.NEXT_PUBLIC_URL + "/users?username=Bret"}
+                  target="_blank"
+                >
+                  /users?username=Bret
+                </Link>
+              </span>
+            </li>
+            <li className="grid grid-cols-2 gap-4">
+              <span>GET</span>
+              <span>
+                <Link
+                  className="text-teal-600 underline"
                   href={process.env.NEXT_PUBLIC_URL + "/posts"}
                   target="_blank"
                 >
