@@ -124,7 +124,7 @@ export default function Try() {
             <h2 className="text-2xl font-semibold text-gray-800 tracking-widest mb-4">
               Routes
             </h2>
-            <ul className="px-4 max-w-xs mb-4">
+            <ul className="px-4 max-w-md mb-4">
               <li className="grid grid-cols-2 gap-4">
                 <span>GET</span>
                 <span>
