@@ -7,12 +7,17 @@ import { Highlighter } from "rc-highlight";
 
 export default function Try() {
   const [res, setRes] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function runScript() {
+    setLoading(true);
     fetch("/api/users/1")
       .then((res) => res.json())
       .then((data) => setRes(JSON.stringify(data, null, 2)))
-      .catch((error) => console.error(error));
+      .catch((error) => console.error(error))
+      .finally(() => {
+        setLoading(false);
+      });
   }
 
   return (
@@ -59,10 +64,12 @@ export default function Try() {
               </Highlighter>
             </div>
             <button
-              className="bg-teal-600 text-white px-6 py-2 rounded-[0.25rem] transition hover:bg-teal-800 animate-bounce mb-8"
+              className={`bg-teal-600 text-white px-6 py-2 rounded-[0.25rem] transition hover:bg-teal-800 ${
+                !loading && "animate-bounce"
+              } mb-8`}
               onClick={runScript}
             >
-              Run Script
+              {!loading ? "Run Script" : "Loading..."}
             </button>
             <div>
               <Highlighter copyToClipBoard={false}>{res || "{}"}</Highlighter>
@@ -194,7 +201,7 @@ export default function Try() {
           Coded by{" "}
           <a
             className="text-teal-600 underline"
-            href="https://linkedin.com/in/dasu-rahul"
+            href="https://linkedin.com/in/rahuldasu"
             target="_blank"
           >
             rahul

@@ -56,7 +56,7 @@ export default function Home() {
           Coded by{" "}
           <a
             className="text-teal-600 underline"
-            href="https://linkedin.com/in/dasu-rahul"
+            href="https://linkedin.com/in/rahuldasu"
             target="_blank"
           >
             rahul
